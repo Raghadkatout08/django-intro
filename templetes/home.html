@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <h1> Welcome To My Website </h1>
+
+    <p> We are delighted to have you here. </p>
+
+    <div class="cta">
+        <a href="about/" class="btn">Learn More About Us</a>
+        <a href="contact/" class="btn">Contact Us</a>
+    </div>
+
+
+    <div class="testimonials">
+        <h2>What Our Users Say</h2>
+        <blockquote>
+            <p>"This site has been incredibly helpful!"</p>
+        </blockquote>
+        <blockquote>
+            <p>"I love the features and the ease of use."</p>
+        </blockquote>
+    </div>
+
+    <footer>
+        <p>Follow us on:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+
+
+</body>
+</html>
+
